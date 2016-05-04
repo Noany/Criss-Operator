@@ -1,0 +1,609 @@
+Spark Command: /Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home/bin/java -cp /Users/zengdan/spark-1.5.1/sbin/../conf/:/Users/zengdan/spark-1.5.1/assembly/target/scala-2.10/spark-assembly-1.5.1-hadoop2.2.0.jar:/Users/zengdan/spark-1.5.1/lib_managed/jars/datanucleus-api-jdo-3.2.6.jar:/Users/zengdan/spark-1.5.1/lib_managed/jars/datanucleus-core-3.2.10.jar:/Users/zengdan/spark-1.5.1/lib_managed/jars/datanucleus-rdbms-3.2.9.jar -Xms1g -Xmx1g -XX:MaxPermSize=256m org.apache.spark.sql.auto.cache.QGMaster --ip localhost --port 7070 --webui-port 8088
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+15/11/11 14:32:13 INFO QGMaster: Registered signal handlers for [TERM, HUP, INT]
+15/11/11 14:32:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/11/11 14:32:14 INFO SecurityManager: Changing view acls to: zengdan
+15/11/11 14:32:14 INFO SecurityManager: Changing modify acls to: zengdan
+15/11/11 14:32:14 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(zengdan); users with modify permissions: Set(zengdan)
+15/11/11 14:32:15 INFO Slf4jLogger: Slf4jLogger started
+15/11/11 14:32:16 INFO Remoting: Starting remoting
+15/11/11 14:32:16 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sqlMaster@localhost:7070]
+15/11/11 14:32:16 INFO Utils: Successfully started service 'sqlMaster' on port 7070.
+15/11/11 14:32:16 INFO SecurityManager: Changing view acls to: zengdan
+15/11/11 14:32:16 INFO SecurityManager: Changing modify acls to: zengdan
+15/11/11 14:32:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(zengdan); users with modify permissions: Set(zengdan)
+15/11/11 14:32:16 INFO QGMaster: Starting Spark QGmaster at spark://localhost:7070
+15/11/11 14:32:16 INFO TachyonBlockManager: Remove global dir of tachyon storage
+15/11/11 14:32:16 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ localhost/127.0.0.1:19998
+15/11/11 14:32:16 INFO : User registered with the master @ localhost/127.0.0.1:19998; got UserId 16
+15/11/11 14:33:06 INFO QGMaster: Successfully connected to akka.tcp://sqlDriver@10.30.1.142:7072
+15/11/11 14:33:06 INFO QGMaster: MatchPlan in QGMaster
+15/11/11 14:33:19 INFO QGMaster: Update Statistics in QGMaster
+15/11/11 14:33:19 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:19 ERROR : Failed to connect (0) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:19 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:19 ERROR : Failed to connect (1) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:19 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:19 ERROR : Failed to connect (2) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:19 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:19 ERROR : Failed to connect (3) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:20 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:20 ERROR : Failed to connect (4) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:21 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:21 ERROR : Failed to connect (5) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:22 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:22 ERROR : Failed to connect (6) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:23 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:23 ERROR : Failed to connect (7) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:24 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:24 ERROR : Failed to connect (8) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:25 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:25 ERROR : Failed to connect (9) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:26 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:26 ERROR : Failed to connect (10) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:27 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:27 ERROR : Failed to connect (11) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:28 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:28 ERROR : Failed to connect (12) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:29 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:29 ERROR : Failed to connect (13) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:30 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:30 ERROR : Failed to connect (14) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:31 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:31 ERROR : Failed to connect (15) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:32 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:32 ERROR : Failed to connect (16) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:33 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:33 ERROR : Failed to connect (17) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:34 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:34 ERROR : Failed to connect (18) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:35 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:35 ERROR : Failed to connect (19) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:36 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:36 ERROR : Failed to connect (20) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:37 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:37 ERROR : Failed to connect (21) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:38 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:38 ERROR : Failed to connect (22) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:39 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:39 ERROR : Failed to connect (23) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:40 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:40 ERROR : Failed to connect (24) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:41 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:41 ERROR : Failed to connect (25) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:42 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:42 ERROR : Failed to connect (26) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:43 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:43 ERROR : Failed to connect (27) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:44 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:44 ERROR : Failed to connect (28) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:45 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:33:45 ERROR : Failed to connect (29) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:33:45 ERROR OneForOneStrategy: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+java.io.IOException: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+	at tachyon.master.MasterClient.connect(MasterClient.java:223)
+	at tachyon.master.MasterClient.qgmaster_setBenefit(MasterClient.java:831)
+	at tachyon.client.TachyonFS.qgmaster_setBenefit(TachyonFS.java:778)
+	at org.apache.spark.sql.auto.cache.QueryGraph.updateStatistics(QueryGraph.scala:398)
+	at org.apache.spark.sql.auto.cache.QGMaster$$anonfun$receiveWithLogging$1.applyOrElse(QGMaster.scala:93)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:59)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467)
+	at org.apache.spark.sql.auto.cache.QGMaster.aroundReceive(QGMaster.scala:40)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: tachyon.org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:185)
+	at tachyon.org.apache.thrift.transport.TFramedTransport.open(TFramedTransport.java:81)
+	at tachyon.master.MasterClient.connect(MasterClient.java:190)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:180)
+	... 24 more
+15/11/11 14:33:45 ERROR QGMaster: QGMaster actor restarted due to exception
+java.io.IOException: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+	at tachyon.master.MasterClient.connect(MasterClient.java:223)
+	at tachyon.master.MasterClient.qgmaster_setBenefit(MasterClient.java:831)
+	at tachyon.client.TachyonFS.qgmaster_setBenefit(TachyonFS.java:778)
+	at org.apache.spark.sql.auto.cache.QueryGraph.updateStatistics(QueryGraph.scala:398)
+	at org.apache.spark.sql.auto.cache.QGMaster$$anonfun$receiveWithLogging$1.applyOrElse(QGMaster.scala:93)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:59)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467)
+	at org.apache.spark.sql.auto.cache.QGMaster.aroundReceive(QGMaster.scala:40)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: tachyon.org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:185)
+	at tachyon.org.apache.thrift.transport.TFramedTransport.open(TFramedTransport.java:81)
+	at tachyon.master.MasterClient.connect(MasterClient.java:190)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:180)
+	... 24 more
+15/11/11 14:33:45 INFO SecurityManager: Changing view acls to: zengdan
+15/11/11 14:33:45 INFO SecurityManager: Changing modify acls to: zengdan
+15/11/11 14:33:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(zengdan); users with modify permissions: Set(zengdan)
+15/11/11 14:33:45 INFO QGMaster: Starting Spark QGmaster at spark://localhost:7070
+15/11/11 14:33:45 INFO TachyonBlockManager: Remove global dir of tachyon storage
+15/11/11 14:33:45 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ localhost/127.0.0.1:19998
+15/11/11 14:33:45 INFO : User registered with the master @ localhost/127.0.0.1:19998; got UserId 17
+15/11/11 14:34:22 INFO QGMaster: Update Statistics in QGMaster
+15/11/11 14:34:22 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:22 ERROR : Failed to connect (0) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:22 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:22 ERROR : Failed to connect (1) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:22 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:22 ERROR : Failed to connect (2) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:22 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:22 ERROR : Failed to connect (3) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:22 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:22 ERROR : Failed to connect (4) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:23 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:23 ERROR : Failed to connect (5) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:23 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:23 ERROR : Failed to connect (6) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:24 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:24 ERROR : Failed to connect (7) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:25 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:25 ERROR : Failed to connect (8) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:26 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:26 ERROR : Failed to connect (9) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:27 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:27 ERROR : Failed to connect (10) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:28 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:28 ERROR : Failed to connect (11) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:29 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:29 ERROR : Failed to connect (12) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:30 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:30 ERROR : Failed to connect (13) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:31 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:31 ERROR : Failed to connect (14) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:32 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:32 ERROR : Failed to connect (15) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:33 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:33 ERROR : Failed to connect (16) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:34 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:34 ERROR : Failed to connect (17) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:35 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:35 ERROR : Failed to connect (18) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:36 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:36 ERROR : Failed to connect (19) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:37 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:37 ERROR : Failed to connect (20) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:38 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:38 ERROR : Failed to connect (21) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:39 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:39 ERROR : Failed to connect (22) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:40 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:40 ERROR : Failed to connect (23) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:41 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:41 ERROR : Failed to connect (24) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:42 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:42 ERROR : Failed to connect (25) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:43 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:43 ERROR : Failed to connect (26) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:44 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:44 ERROR : Failed to connect (27) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:45 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:45 ERROR : Failed to connect (28) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:46 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:34:46 ERROR : Failed to connect (29) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:34:46 ERROR QGMaster: QGMaster actor restarted due to exception
+java.io.IOException: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+	at tachyon.master.MasterClient.connect(MasterClient.java:223)
+	at tachyon.master.MasterClient.qgmaster_setBenefit(MasterClient.java:831)
+	at tachyon.client.TachyonFS.qgmaster_setBenefit(TachyonFS.java:778)
+	at org.apache.spark.sql.auto.cache.QueryGraph.updateStatistics(QueryGraph.scala:398)
+	at org.apache.spark.sql.auto.cache.QGMaster$$anonfun$receiveWithLogging$1.applyOrElse(QGMaster.scala:93)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:59)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467)
+	at org.apache.spark.sql.auto.cache.QGMaster.aroundReceive(QGMaster.scala:40)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: tachyon.org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:185)
+	at tachyon.org.apache.thrift.transport.TFramedTransport.open(TFramedTransport.java:81)
+	at tachyon.master.MasterClient.connect(MasterClient.java:190)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:180)
+	... 24 more
+15/11/11 14:34:46 ERROR OneForOneStrategy: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+java.io.IOException: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+	at tachyon.master.MasterClient.connect(MasterClient.java:223)
+	at tachyon.master.MasterClient.qgmaster_setBenefit(MasterClient.java:831)
+	at tachyon.client.TachyonFS.qgmaster_setBenefit(TachyonFS.java:778)
+	at org.apache.spark.sql.auto.cache.QueryGraph.updateStatistics(QueryGraph.scala:398)
+	at org.apache.spark.sql.auto.cache.QGMaster$$anonfun$receiveWithLogging$1.applyOrElse(QGMaster.scala:93)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:59)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467)
+	at org.apache.spark.sql.auto.cache.QGMaster.aroundReceive(QGMaster.scala:40)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: tachyon.org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:185)
+	at tachyon.org.apache.thrift.transport.TFramedTransport.open(TFramedTransport.java:81)
+	at tachyon.master.MasterClient.connect(MasterClient.java:190)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:180)
+	... 24 more
+15/11/11 14:34:46 INFO SecurityManager: Changing view acls to: zengdan
+15/11/11 14:34:46 INFO SecurityManager: Changing modify acls to: zengdan
+15/11/11 14:34:46 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(zengdan); users with modify permissions: Set(zengdan)
+15/11/11 14:34:46 INFO QGMaster: Starting Spark QGmaster at spark://localhost:7070
+15/11/11 14:34:46 INFO TachyonBlockManager: Remove global dir of tachyon storage
+15/11/11 14:34:46 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ localhost/127.0.0.1:19998
+15/11/11 14:34:46 INFO : User registered with the master @ localhost/127.0.0.1:19998; got UserId 18
+15/11/11 14:35:25 INFO QGMaster: Update Statistics in QGMaster
+15/11/11 14:35:25 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:25 ERROR : Failed to connect (0) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:25 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:25 ERROR : Failed to connect (1) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:25 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:25 ERROR : Failed to connect (2) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:26 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:26 ERROR : Failed to connect (3) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:26 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:26 ERROR : Failed to connect (4) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:26 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:26 ERROR : Failed to connect (5) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:27 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:27 ERROR : Failed to connect (6) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:28 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:28 ERROR : Failed to connect (7) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:29 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:29 ERROR : Failed to connect (8) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:30 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:30 ERROR : Failed to connect (9) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:31 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:31 ERROR : Failed to connect (10) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:32 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:32 ERROR : Failed to connect (11) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:33 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:33 ERROR : Failed to connect (12) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:34 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:34 ERROR : Failed to connect (13) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:36 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:36 ERROR : Failed to connect (14) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:37 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:37 ERROR : Failed to connect (15) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:38 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:38 ERROR : Failed to connect (16) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:39 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:39 ERROR : Failed to connect (17) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:40 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:40 ERROR : Failed to connect (18) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:41 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:41 ERROR : Failed to connect (19) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:42 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:42 ERROR : Failed to connect (20) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:43 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:43 ERROR : Failed to connect (21) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:44 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:44 ERROR : Failed to connect (22) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:45 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:45 ERROR : Failed to connect (23) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:46 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:46 ERROR : Failed to connect (24) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:47 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:47 ERROR : Failed to connect (25) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:48 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:48 ERROR : Failed to connect (26) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:49 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:49 ERROR : Failed to connect (27) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:50 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:50 ERROR : Failed to connect (28) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:51 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:35:51 ERROR : Failed to connect (29) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:35:51 ERROR QGMaster: QGMaster actor restarted due to exception
+java.io.IOException: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+	at tachyon.master.MasterClient.connect(MasterClient.java:223)
+	at tachyon.master.MasterClient.qgmaster_setBenefit(MasterClient.java:831)
+	at tachyon.client.TachyonFS.qgmaster_setBenefit(TachyonFS.java:778)
+	at org.apache.spark.sql.auto.cache.QueryGraph.updateStatistics(QueryGraph.scala:398)
+	at org.apache.spark.sql.auto.cache.QGMaster$$anonfun$receiveWithLogging$1.applyOrElse(QGMaster.scala:93)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:59)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467)
+	at org.apache.spark.sql.auto.cache.QGMaster.aroundReceive(QGMaster.scala:40)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: tachyon.org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:185)
+	at tachyon.org.apache.thrift.transport.TFramedTransport.open(TFramedTransport.java:81)
+	at tachyon.master.MasterClient.connect(MasterClient.java:190)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:180)
+	... 24 more
+15/11/11 14:35:51 ERROR OneForOneStrategy: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+java.io.IOException: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+	at tachyon.master.MasterClient.connect(MasterClient.java:223)
+	at tachyon.master.MasterClient.qgmaster_setBenefit(MasterClient.java:831)
+	at tachyon.client.TachyonFS.qgmaster_setBenefit(TachyonFS.java:778)
+	at org.apache.spark.sql.auto.cache.QueryGraph.updateStatistics(QueryGraph.scala:398)
+	at org.apache.spark.sql.auto.cache.QGMaster$$anonfun$receiveWithLogging$1.applyOrElse(QGMaster.scala:93)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:59)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467)
+	at org.apache.spark.sql.auto.cache.QGMaster.aroundReceive(QGMaster.scala:40)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: tachyon.org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:185)
+	at tachyon.org.apache.thrift.transport.TFramedTransport.open(TFramedTransport.java:81)
+	at tachyon.master.MasterClient.connect(MasterClient.java:190)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:180)
+	... 24 more
+15/11/11 14:35:51 INFO SecurityManager: Changing view acls to: zengdan
+15/11/11 14:35:51 INFO SecurityManager: Changing modify acls to: zengdan
+15/11/11 14:35:51 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(zengdan); users with modify permissions: Set(zengdan)
+15/11/11 14:35:51 INFO QGMaster: Starting Spark QGmaster at spark://localhost:7070
+15/11/11 14:35:51 INFO TachyonBlockManager: Remove global dir of tachyon storage
+15/11/11 14:35:51 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ localhost/127.0.0.1:19998
+15/11/11 14:35:51 INFO : User registered with the master @ localhost/127.0.0.1:19998; got UserId 19
+15/11/11 14:36:25 INFO QGMaster: Update Statistics in QGMaster
+15/11/11 14:36:25 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:25 ERROR : Failed to connect (0) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:25 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:25 ERROR : Failed to connect (1) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:25 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:25 ERROR : Failed to connect (2) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:25 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:25 ERROR : Failed to connect (3) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:26 WARN ReliableDeliverySupervisor: Association with remote system [akka.tcp://sqlDriver@10.30.1.142:7072] has failed, address is now gated for [5000] ms. Reason: [Disassociated] 
+15/11/11 14:36:26 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:26 ERROR : Failed to connect (4) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:27 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:27 ERROR : Failed to connect (5) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:28 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:28 ERROR : Failed to connect (6) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:29 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:29 ERROR : Failed to connect (7) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:30 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:30 ERROR : Failed to connect (8) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:31 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:31 ERROR : Failed to connect (9) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:32 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:32 ERROR : Failed to connect (10) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:33 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:33 ERROR : Failed to connect (11) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:34 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:34 ERROR : Failed to connect (12) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:35 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:35 ERROR : Failed to connect (13) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:36 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:36 ERROR : Failed to connect (14) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:37 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:37 ERROR : Failed to connect (15) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:38 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:38 ERROR : Failed to connect (16) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:39 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:39 ERROR : Failed to connect (17) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:40 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:40 ERROR : Failed to connect (18) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:41 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:41 ERROR : Failed to connect (19) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:42 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:42 ERROR : Failed to connect (20) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:43 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:43 ERROR : Failed to connect (21) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:44 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:44 ERROR : Failed to connect (22) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:45 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:45 ERROR : Failed to connect (23) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:46 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:46 ERROR : Failed to connect (24) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:47 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:47 ERROR : Failed to connect (25) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:48 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:48 ERROR : Failed to connect (26) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:49 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:49 ERROR : Failed to connect (27) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:50 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:50 ERROR : Failed to connect (28) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:51 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ 10.30.1.142/10.30.1.142:19998
+15/11/11 14:36:51 ERROR : Failed to connect (29) with master @ 10.30.1.142/10.30.1.142:19998 : java.net.ConnectException: Connection refused
+15/11/11 14:36:51 ERROR QGMaster: QGMaster actor restarted due to exception
+java.io.IOException: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+	at tachyon.master.MasterClient.connect(MasterClient.java:223)
+	at tachyon.master.MasterClient.qgmaster_setBenefit(MasterClient.java:831)
+	at tachyon.client.TachyonFS.qgmaster_setBenefit(TachyonFS.java:778)
+	at org.apache.spark.sql.auto.cache.QueryGraph.updateStatistics(QueryGraph.scala:398)
+	at org.apache.spark.sql.auto.cache.QGMaster$$anonfun$receiveWithLogging$1.applyOrElse(QGMaster.scala:93)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:59)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467)
+	at org.apache.spark.sql.auto.cache.QGMaster.aroundReceive(QGMaster.scala:40)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: tachyon.org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:185)
+	at tachyon.org.apache.thrift.transport.TFramedTransport.open(TFramedTransport.java:81)
+	at tachyon.master.MasterClient.connect(MasterClient.java:190)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:180)
+	... 24 more
+15/11/11 14:36:51 ERROR OneForOneStrategy: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+java.io.IOException: Failed to connect with master @ 10.30.1.142/10.30.1.142:19998 after 29 attempts
+	at tachyon.master.MasterClient.connect(MasterClient.java:223)
+	at tachyon.master.MasterClient.qgmaster_setBenefit(MasterClient.java:831)
+	at tachyon.client.TachyonFS.qgmaster_setBenefit(TachyonFS.java:778)
+	at org.apache.spark.sql.auto.cache.QueryGraph.updateStatistics(QueryGraph.scala:398)
+	at org.apache.spark.sql.auto.cache.QGMaster$$anonfun$receiveWithLogging$1.applyOrElse(QGMaster.scala:93)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply$mcVL$sp(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:33)
+	at scala.runtime.AbstractPartialFunction$mcVL$sp.apply(AbstractPartialFunction.scala:25)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:59)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.apply(ActorLogReceive.scala:42)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:118)
+	at org.apache.spark.util.ActorLogReceive$$anon$1.applyOrElse(ActorLogReceive.scala:42)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467)
+	at org.apache.spark.sql.auto.cache.QGMaster.aroundReceive(QGMaster.scala:40)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: tachyon.org.apache.thrift.transport.TTransportException: java.net.ConnectException: Connection refused
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:185)
+	at tachyon.org.apache.thrift.transport.TFramedTransport.open(TFramedTransport.java:81)
+	at tachyon.master.MasterClient.connect(MasterClient.java:190)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at tachyon.org.apache.thrift.transport.TSocket.open(TSocket.java:180)
+	... 24 more
+15/11/11 14:36:51 INFO SecurityManager: Changing view acls to: zengdan
+15/11/11 14:36:51 INFO SecurityManager: Changing modify acls to: zengdan
+15/11/11 14:36:51 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(zengdan); users with modify permissions: Set(zengdan)
+15/11/11 14:36:51 INFO QGMaster: Starting Spark QGmaster at spark://localhost:7070
+15/11/11 14:36:51 INFO TachyonBlockManager: Remove global dir of tachyon storage
+15/11/11 14:36:51 INFO : Tachyon client (version 0.7.1) is trying to connect with master @ localhost/127.0.0.1:19998
+15/11/11 14:36:51 INFO : User registered with the master @ localhost/127.0.0.1:19998; got UserId 20
+15/11/11 14:36:51 INFO QGMaster: akka.tcp://sqlDriver@10.30.1.142:7072 got disassociated.
+15/11/11 14:36:51 INFO QGMaster: akka.tcp://sqlDriver@10.30.1.142:7072 got disassociated.
+15/11/11 14:54:18 ERROR QGMaster: RECEIVED SIGNAL 15: SIGTERM
